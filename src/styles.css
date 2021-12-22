@@ -1,0 +1,52 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+}
+.intro_bg {
+  background-image: url("src/image/intro.png");
+  width: 100%;
+  height: 718px;
+}
+.header {
+  display: flex;
+  width: 1280px;
+  background-color: salmon;
+  height: 86px;
+}
+.nav {
+  display: flex;
+  width: calc(1280px - 300px);
+  justify-content: flex-end;
+  line-height: 86px;
+  background-color: green;
+}
+.nav > li {
+  margin-left: 84px;
+}
+.nav > li > a {
+  color: white;
+}
+.searchArea {
+  margin-top: 24px;
+  width: 300px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.searchArea > form > input {
+  border: none;
+  width: 250px;
+  height: 40px;
+  background-color: white;
+  padding-left: 10px;
+}
+.searchArea > form > span {
+  width: 50px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

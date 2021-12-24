@@ -6,15 +6,19 @@
   padding: 0px;
   color: #000;
 }
+h1 {
+  font-size: 55px;
+}
+
 .intro_bg {
-  background-image: url("src/image/intro.png");
+  background-image: url("src/image/intro_2.jpg");
   width: 100%;
   height: 718px;
 }
 .header {
   display: flex;
   width: 1280px;
-  background-color: salmon;
+
   height: 86px;
 }
 .nav {
@@ -22,16 +26,16 @@
   width: calc(1280px - 300px);
   justify-content: flex-end;
   line-height: 86px;
-  background-color: green;
 }
 .nav > li {
   margin-left: 84px;
 }
 .nav > li > a {
   color: white;
+  font-weight: bold;
 }
 .searchArea {
-  margin-top: 24px;
+  margin: 30px auto 100px auto;
   width: 300px;
   height: 40px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -39,14 +43,49 @@
 }
 .searchArea > form > input {
   border: none;
-  width: 250px;
+  width: 220px;
   height: 40px;
-  background-color: white;
-  padding-left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .searchArea > form > span {
-  width: 50px;
+  width: 30px;
   color: white;
   font-weight: bold;
   cursor: pointer;
+}
+.intro_text {
+  width: 100%;
+  text-align: center;
+  margin: 60px auto 231px auto;
+}
+.intro_text > h1,
+.intro_text > h2 {
+  color: #fff;
+}
+
+.intro_text > h2 {
+  font-size: 22px;
+}
+
+.box-st {
+  width: 60px;
+  height: 38px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+.text-st {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: white;
+}
+
+.button-st {
+  cursor: pointer;
+}
+.button-st:active {
+  transform: translate(1px, 1px);
 }

@@ -12,22 +12,28 @@ function get_time() {
 }
 
 function reroad() {
+  /*실시간으로 숫자 보여주기.1초에 한 번씩 실행*/
   setInterval(get_time, 1000); /*단위는 밀리초, 1000초=1초 */
 }
 
 reroad();
 
-const button = document.querySelector(".button");
+const button = document.querySelector(".button"); /*class button불러오기*/
+function register(event) {
+  const result = document.getElementById("addrlist");
+  const newAddr = document.getElementsByName("name")[0]
+    .value; /*name에서 첫 번째 값 불러오기 */
+  const item = document.createElement("li"); /*li생성, 줄바꿈 */
+  const txt = document.createTextNode(newAddr); /*result들어갈 빈 칸 생성 */
+  item.appendChild(txt);
+  result.appendChild(item);
+}
 
-window.onload = function start() {
-  button.addEventListener("click", addAddr);
-  function addAddr() {
-    const result = document.getElementById("addrlist");
-    const newAddr = document.getElementsByName("name")[0].value;
-    const item = document.createElement("li");
-    const txt = document.createTextNode(newAddr);
+function start() {
+  button.addEventListener(
+    "click",
+    register
+  ); /*button에 함수실행기능과 이벤트추가 */
+}
 
-    item.appendChild(txt);
-    result.appendChild(item);
-  }
-};
+start();

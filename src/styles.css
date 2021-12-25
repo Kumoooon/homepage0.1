@@ -7,7 +7,7 @@
   color: #000;
 }
 h1 {
-  font-size: 55px;
+  font-size: 80px;
 }
 
 .intro_bg {
@@ -60,7 +60,7 @@ h1 {
 }
 .intro_text > h1,
 .intro_text > h2 {
-  color: #fff;
+  color: cadetblue;
 }
 
 .intro_text > h2 {
